@@ -1,3 +1,19 @@
+<head>
+<script type="text/javascript" src="jquery-3.5.0.js"></script>
+
+<script>
+  
+  $(document).ready(function() {
+    $("#target1").parent().css("background-color", "purple");
+    $("#right-well").children().css("color", "orange");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    $("body").addClass("animated hinge");
+  });
+
+</script>
+</head>
+
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .blue-text {
@@ -40,17 +56,6 @@
 <a href="#"><img  class="smaller-image" src="https://scontent.ftpe12-2.fna.fbcdn.net/v/t1.15752-9/90426153_506369326954642_5071013215748489216_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=P_fagmLaBDcAX_mRHBn&_nc_ht=scontent.ftpe12-2.fna&oh=3731e49dc7d25207411b57d0c3b94f4a&oe=5EAF656A" alt="A cute orange cat lying on its back."></a>
 </main>
 
-<script>
-  $(document).ready(function() {
-    $("#target1").css("color", "red");
-    $("#target1").parent().css("background-color", "red");
-    $("#right-well").children().css("color", "orange");
-    $(".target:nth-child(2)").addClass("animated bounce");
-    $(".target:even").addClass("animated shake");
-
-  });
-</script>
-
 
 <div class="container-fluid">
   <h3 class="text-primary text-center">巴巴</h3>
@@ -58,11 +63,10 @@
     <div class="col-xs-6">
       <h4>可愛特徵</h4>
       <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4">小型犬短鼻狗</button>
-        <button class="btn btn-default target" id="target5">臉黑有皺褶</button>
-        <button class="btn btn-default target" id="target6">傲嬌</button>
+        <button class="btn btn-default target" id="target1">小型犬短鼻狗</button>
+        <button class="btn btn-default target" id="target2">臉黑有皺褶</button>
+        <button class="btn btn-default target" id="target3">傲嬌</button>
       </div>
     </div>
   </div>
 </div>
-
