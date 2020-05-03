@@ -12,9 +12,11 @@
   });
 
 </script>
+
+<link rel="manifest" href="manifest.json">
 </head>
 
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
 <style>
   .blue-text {
     color: blue;
@@ -36,7 +38,7 @@
 <main>
   
 
-  <a href="#"><img class="smaller-image" src="https://scontent.ftpe12-2.fna.fbcdn.net/v/t1.15752-9/91833242_3193337464061712_5941596523937660928_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=PZoIO_leSLMAX8bg03v&_nc_ht=scontent.ftpe12-2.fna&oh=3954cd5eaccb471e985cede9bfbfe6d6&oe=5EAE42CF" alt="A cute orange cat lying on its back."></a>
+  <a href="#"><img class="smaller-image" src="https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/95377106_3270325446311304_24606954265509888_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=0rY7SToRU0YAX-_xsBA&_nc_ht=scontent.ftpe3-2.fna&oh=6ddfa6ea0c23f4b8961fe82a9dabb6d1&oe=5ED5DFE7" alt="A cute orange cat lying on its back."></a>
 <a href="#"><img  class="smaller-image" src="https://scontent.ftpe12-2.fna.fbcdn.net/v/t1.15752-9/75464123_3306113046096182_5457243256557404160_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=OwdFq6e98ZIAX8swwT2&_nc_ht=scontent.ftpe12-2.fna&oh=5c321ff11a55d87f8cf8cca5c7ee65c1&oe=5EAFB333" alt="A cute orange cat lying on its back."></a>
   <div class="silver-background">
     <p>巴哥愛:</p>
@@ -70,3 +72,14 @@
     </div>
   </div>
 </div>
+
+
+if('servieWorker' in navigator)
+{
+  console.log("will service worker register");
+  navigator.serviceWorker.register('service-worker.js').then(function(reg){
+    console.log("yes it did.");
+  }).catch(function(err){
+    console.log("No it didn't. This happend: ", err)
+  });
+}
